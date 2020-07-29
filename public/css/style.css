@@ -1,7 +1,4 @@
 body {
-  background-image: url("../images/screen-without-elements.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #f3f3f2;
 }
 
@@ -22,6 +19,9 @@ body {
 
 #main-section {
   position: relative;
+  background-image: url("../images/screen-without-elements.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .scoreboard {
