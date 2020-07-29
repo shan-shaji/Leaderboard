@@ -1,16 +1,80 @@
 body {
-  background-color: #fbe006;
+  background-image: url("../images/screen-without-elements.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 /* Header {main-title} */
-
 .main-title-leaderboard {
   padding: 20px;
 }
+
 .leaderboard-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 50px;
   color: black;
   letter-spacing: 2px;
+}
+
+/* content left column */
+
+#main-section {
+  position: relative;
+}
+.scoreboard {
+  padding: 50px;
+}
+
+.scoreboard-list {
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.my-custom-scrollbar {
+  max-height: 500px;
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+/* Elements in the page */
+.curve-left {
+  position: absolute;
+  z-index: -1;
+  width: 30%;
+  bottom: 0px;
+  left: -90px;
+  top: 400px;
+}
+.curve-right {
+  right: 50px;
+  position: absolute;
+  z-index: -1;
+  width: 10%;
+  bottom: 30px;
+}
+
+.circle-left {
+  top: -100px;
+  position: absolute;
+  z-index: -1;
+  width: 20%;
+  left: -100px;
+}
+
+.curve-top-right {
+  top: 5px;
+  position: absolute;
+  z-index: -1;
+  width: 10%;
+  right: 0px;
 }

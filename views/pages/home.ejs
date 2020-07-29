@@ -1,4 +1,12 @@
 <%- include("../partials/header"); -%>
+<img src="images/circle-top-left.svg" alt="" srcset="" class="circle-left" />
+<img
+  src="images/curve-top-right.svg"
+  alt=""
+  srcset=""
+  class="curve-top-right"
+/>
+
 <section id="header">
   <div class="container-fluid">
     <div class="main-title-leaderboard">
@@ -17,11 +25,147 @@
 <section id="main-section">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-6"></div>
+      <div class="col-lg-6 scoreboard">
+        <div class="scoreboard-list">
+          <!-- Search form -->
+          <div class="searchbar">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+              id="tableSearch"
+            />
+          </div>
+          <div class="scoreboard-content">
+            <div class="table-wrapper-scroll-y my-custom-scrollbar">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                  </tr>
+                  <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@greatstuff.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                  <tr>
+                    <td>Anja</td>
+                    <td>Ravendale</td>
+                    <td>a_r@test.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-lg-6 position-column">
         <!-- TODO: to impliment @tonal -->
       </div>
     </div>
   </div>
+  <img src="images/curve-bottom-left.svg" alt="" srcset="" class="curve-left" />
+  <img
+    src="images/circle-bottom-right.svg"
+    alt=""
+    srcset=""
+    class="curve-right"
+  />
 </section>
+
 <%- include("../partials/footer"); -%>
