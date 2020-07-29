@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  
 }
 
 /* Header {main-title} */
@@ -78,3 +79,53 @@ body {
   width: 10%;
   right: 0px;
 }
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
+
+
+.svg-image{
+  padding-top: 0;
+}
+
+.winner-2{
+  position: relative;
+  top: 190px;
+  left: 40px;
+  width: 150px;
+
+}
+
+.winner-1{
+  position: relative;
+  top: 70px;
+  left: 230px;
+  width: 150px;
+}
+
+.winner-3{
+  position: relative;
+  top: 120px;
+  left: 440px;
+  width: 150px;
+}
+
+.winner-name{
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+.score{
+  background-color: #585853;
+  width: 90px;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
