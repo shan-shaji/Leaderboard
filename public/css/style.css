@@ -1,0 +1,16 @@
+body {
+  background-color: #fbe006;
+}
+
+/* Header {main-title} */
+
+.main-title-leaderboard {
+  padding: 20px;
+}
+.leaderboard-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: black;
+  letter-spacing: 2px;
+}
