@@ -3,7 +3,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  
 }
 
 /* Header {main-title} */
@@ -79,44 +78,48 @@ body {
   width: 10%;
   right: 0px;
 }
+
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
-
-
-.svg-image{
-  padding-top: 0;
+.position-column {
+  text-align: center;
+  margin: auto 0px;
+  display: flex;
+  flex-direction: column;
+}
+.svg-positions {
 }
 
-.winner-2{
-  position: relative;
-  top: 190px;
-  left: 40px;
-  width: 150px;
-
+.names-of-partcipants {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+.winner-2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
 }
 
-.winner-1{
-  position: relative;
-  top: 70px;
-  left: 230px;
-  width: 150px;
+.winner-1 {
+  display: flex;
+  flex-direction: column;
 }
 
-.winner-3{
-  position: relative;
-  top: 120px;
-  left: 440px;
-  width: 150px;
+.winner-3 {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 
-.winner-name{
+.winner-name {
   color: black;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
-
 }
 
-.score{
+.score {
   background-color: #585853;
   width: 90px;
   text-align: center;
@@ -125,7 +128,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: italic;
-  margin-left: 20px;
 }
 
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
