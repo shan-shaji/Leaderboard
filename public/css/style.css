@@ -1,7 +1,11 @@
 body {
-  /* background-color: #f3f3f2; */
-  background-color: #FFE53B;
+  background-color: white;
+  background-image: url("../images/screen-without-elements.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
+/* start of main-section */
 
 /* Header {main-title} */
 .main-title-leaderboard {
@@ -20,9 +24,8 @@ body {
 
 #main-section {
   position: relative;
-  background-image: url("../images/screen-without-elements.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
+  padding: 2.5% 0%;
 }
 
 .scoreboard {
@@ -48,62 +51,21 @@ body {
   display: block;
 }
 
-/* Elements in the page */
-.curve-left {
-  position: absolute;
-  z-index: -1;
-  width: 20%;
-  bottom: 0px;
-  /* left: -90px;
-  top: 500px; */
-  left: 20px;
-  bottom: -50px;
-}
-
-.circle-left-bottom {
-  position: absolute;
-  left: 400px;
-  bottom: 0px;
-  width: 5%;
-  z-index: -1;
-}
-.circle-bottom-right {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 10%;
-  z-index: -1;
-}
-.circle-left {
-  top: 50px;
-  position: absolute;
-  z-index: -1;
-  width: 10%;
-  left: 50px;
-}
-
-.curve-top-right {
-  top: 5px;
-  position: absolute;
-  z-index: -1;
-  width: 10%;
-  right: 0px;
-}
-
 .form-rounded {
   border-radius: 2rem;
   padding-left: 30px;
-
-  }
+}
 
 .search-icon {
   position: absolute;
   top: 91px;
   left: 90px;
-  color: #6C767D;
-  }
+  color: #6c767d;
+}
 
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
+
 .position-column {
   margin: auto 0px;
 }
@@ -154,10 +116,31 @@ body {
   margin: 0px auto;
 }
 
+.wave {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+/* End of main Section */
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
+/* Start of Footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* End of Footer */
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
+
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
+/* media Queries */
+
 @media (max-width: 1131px) and (min-width: 992px) {
-  
   .winner-name {
     color: black;
     font-family: "Montserrat", sans-serif;
@@ -171,12 +154,10 @@ body {
     position: relative;
     top: 90px;
   }
-
 }
 
 @media (max-width: 991px) and (min-width: 700px) {
-
-  .winner-svg{
+  .winner-svg {
     position: relative;
     top: 95px;
   }
@@ -193,19 +174,17 @@ body {
     position: relative;
     top: 180px;
   }
-  
+
   .winner-3 {
     display: flex;
     flex-direction: column;
     position: relative;
     top: 230px;
   }
-  
 }
 
-@media (max-width: 699px) and (min-width: 480px){
-
-  .winner-svg{
+@media (max-width: 699px) and (min-width: 480px) {
+  .winner-svg {
     position: relative;
     top: 80px;
   }
@@ -222,7 +201,7 @@ body {
     position: relative;
     top: 140px;
   }
-  
+
   .winner-3 {
     display: flex;
     flex-direction: column;
@@ -249,13 +228,10 @@ body {
     margin: 0px auto;
     font-size: 12px;
   }
-  
 }
 
-
-@media (max-width: 479px){
-
-  .winner-svg{
+@media (max-width: 479px) {
+  .winner-svg {
     position: relative;
     top: 75px;
   }
@@ -272,7 +248,7 @@ body {
     position: relative;
     top: 115px;
   }
-  
+
   .winner-3 {
     display: flex;
     flex-direction: column;
@@ -301,36 +277,33 @@ body {
   }
 
   .scoreboard {
-    
-    padding-left: 0px!important;
-    padding-right: 0px!important;
-
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   .search-icon {
     position: absolute;
     top: 91px;
     left: 40px;
-    color: #6C767D;
-    }
+    color: #6c767d;
+  }
 
-    .leaderboard-title {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 900;
-      font-size: 35px;
-      color: black;
-      letter-spacing: 2px;
-    }
-
+  .leaderboard-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    color: black;
+    letter-spacing: 2px;
+  }
 }
 
-@media (max-width: 365px){
-
+@media (max-width: 365px) {
   .winner-name {
     color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 12px;
   }
-
 }
+/* End of media queries*/
+/* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
