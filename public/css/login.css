@@ -1,0 +1,155 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* FORM TYPOGRAPHY*/
+
+.wrapper input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-image: linear-gradient(to right, #ee4d7b, #3173e3);
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  box-shadow: 0 10px 40px -15px #ee4d7b;
+
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.wrapper input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #39ace7;
+}
+
+.wrapper input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+  transform: scale(0.95);
+}
+
+.wrapper .login-form {
+  padding-top: 40px;
+}
+
+.wrapper input[type="text"], input[type="password"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+
+  transition: all 0.5s ease-in-out;
+
+  border-radius: 5px 5px 5px 5px;
+}
+
+.wrapper input[type="text"]:focus, input[type="password"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #ee4d7b;
+}
+
+.wrapper input[type="text"]::placeholder, input[type="password"]::placeholder {
+  color: #cccccc;
+}
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  animation-name: fadeInDown;
+
+  animation-duration: 1s;
+
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+
+  animation: fadeIn ease-in 1;
+
+  animation-fill-mode: forwards;
+
+  animation-duration: 1s;
+}
+
+.fadeIn.second {
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+
+/* OTHERS */
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+#icon {
+  width: 60%;
+}

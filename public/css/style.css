@@ -1,12 +1,17 @@
 body {
+  font-family: "Montserrat", sans-serif;
   background-color: white;
   background-image: url("../images/screen-without-elements.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* start of main-section */
 
+.admin-button {
+  display: none;
+}
 /* Header {main-title} */
 .main-title-leaderboard {
   padding: 20px;
@@ -24,8 +29,6 @@ body {
 
 #main-section {
   position: relative;
-
-  padding: 2.5% 0%;
 }
 
 .scoreboard {
@@ -116,22 +119,19 @@ body {
   margin: 0px auto;
 }
 
-.wave {
-  position: absolute;
-  top: 0px;
-  z-index: -1;
-}
-
 /* End of main Section */
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* Start of Footer */
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+#footer {
+  padding: 10px;
+}
+.developers {
+  text-align: center;
+
+  margin: auto 0px;
 }
 
 /* End of Footer */
@@ -140,6 +140,27 @@ body {
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* media Queries */
 
+
+/* Admin button will only show on screens having device width greater than 1200px */
+@media (min-width: 1200px) {
+  .admin-button {
+    padding: 15px 50px;
+    background-image: linear-gradient(to right, #ee4d7b, #3173e3);
+    color: white;
+    display: block;
+    border-radius: 5px;
+    margin: 0px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 40px -15px #ee4d7b;
+    outline: none;
+    font-weight: 600;
+  }
+
+  .admin-button:hover {
+    transform: scale(0.95);
+    color: white;
+  }
+}
 @media (max-width: 1131px) and (min-width: 992px) {
   .winner-name {
     color: black;

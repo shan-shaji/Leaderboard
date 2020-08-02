@@ -3,13 +3,18 @@
 <section id="header">
   <div class="container-fluid">
     <div class="main-title-leaderboard">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <p class="text-center leaderboard-title text-uppercase">
-            Leaderboard
-          </p>
-        </li>
-      </ul>
+      <nav class="navbar">
+        <div class="mx-auto navbar-brand">
+          <a class="leaderboard-title">LeaderBoard</a>
+        </div>
+        <div class="navbar-nav p-">
+          <a href="/login">
+            <button type="button" class="btn admin-button">
+              Admin
+            </button>
+          </a>
+        </div>
+      </nav>
     </div>
   </div>
 </section>
@@ -62,7 +67,7 @@
           </div>
           <div class="scoreboard-content">
             <div class="table-wrapper-scroll-y my-custom-scrollbar">
-              <table class="table">
+              <table class="table table-borderless">
                 <thead>
                   <tr>
                     <th>Rank</th>
@@ -179,6 +184,7 @@
       </div>
     </div>
   </div>
+  <div></div>
 </section>
 
 <%- include("../partials/footer"); -%>
