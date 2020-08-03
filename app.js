@@ -8,7 +8,7 @@ const ejs = require("ejs");
 const app = express();
 
 // Setting port
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 
 // Serving static files
 app.use(express.static("public"));

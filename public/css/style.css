@@ -6,6 +6,21 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper-spinner {
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+
+  max-width: 450px;
+  padding: 20px;
+}
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* start of main-section */
 
@@ -127,11 +142,16 @@ body {
 
 #footer {
   padding: 10px;
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 .developers {
   text-align: center;
-
-  margin: auto 0px;
 }
 
 /* End of Footer */
@@ -139,7 +159,6 @@ body {
 
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* media Queries */
-
 
 /* Admin button will only show on screens having device width greater than 1200px */
 @media (min-width: 1200px) {
