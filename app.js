@@ -3,12 +3,16 @@ const bodyParser = require("body-parser");
 const homePageRoutes = require("./routes/homePageRoutes.js");
 const loginRoutes = require("./routes/login.js");
 const ejs = require("ejs");
+const InitiateMongoServer = require("./config/db.js");
+
+// initiate mongo server
+InitiateMongoServer();
 
 // Creating an instance
 const app = express();
 
 // Setting port
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 
 // Serving static files
 app.use(express.static("public"));
