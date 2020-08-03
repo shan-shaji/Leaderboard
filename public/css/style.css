@@ -147,6 +147,16 @@ body {
   margin: auto 0px;
 }
 
+.developers-main{
+  text-decoration: none;
+  color: black;
+}
+
+.developers-main:hover{
+  text-decoration: none;
+  color: red;
+}
+
 /* End of Footer */
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 
