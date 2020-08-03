@@ -30,21 +30,21 @@
         <div class="svg-positions">
           <div class="names-of-participants">
             <div class="winner-2">
-              <h4 class="winner-name"><%= result2.name %></h4>
+              <h4 class="winner-name"><%= rankingResult[1].name %></h4>
               <div class="score">
-                <%= result2.total %>
+                <%= rankingResult[1].total %>
               </div>
             </div>
             <div class="winner-1">
-              <h4 class="winner-name"><%= result1.name %></h4>
+              <h4 class="winner-name"><%= rankingResult[0].name %></h4>
               <div class="score">
-                <%= result1.total %>
+                <%= rankingResult[0].total %>
               </div>
             </div>
             <div class="winner-3">
-              <h4 class="winner-name"><%= result3.name %></h4>
+              <h4 class="winner-name"><%= rankingResult[2].name %></h4>
               <div class="score">
-                <%= result3.total %>
+                <%= rankingResult[2].total %>
               </div>
             </div>
           </div>
@@ -81,7 +81,9 @@
                   <tr>
                     <td><%= participant.ranking %></td>
                     <td><%= participant.name %></td>
-                    <td><div class="score-in-table"><%= participant.total %></div></td>
+                    <td>
+                      <div class="score-in-table"><%= participant.total %></div>
+                    </td>
                   </tr>
                   <% }) %>
                 </tbody>
@@ -92,6 +94,6 @@
       </div>
     </div>
   </div>
-  <div></div>
 </section>
+<div></div>
 <% } %> <%- include("../partials/footer"); -%>

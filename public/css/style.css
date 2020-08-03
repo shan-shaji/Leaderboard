@@ -1,10 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: white;
-  background-image: url("../images/screen-without-elements.svg");
+  background-image: linear-gradient(to right, #1b1c48, #bb4276);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 
 .wrapper {
@@ -14,10 +11,10 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+
 .wrapper-spinner {
   border-radius: 10px 10px 10px 10px;
   background: #fff;
-
   max-width: 450px;
   padding: 20px;
 }
@@ -32,11 +29,11 @@ body {
   padding: 20px;
 }
 
-.leaderboard-title {
+.navbar .leaderboard-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 50px;
-  color: black;
+  color: white;
   letter-spacing: 2px;
 }
 
@@ -90,10 +87,6 @@ body {
   margin: 0px auto;
 }
 
-/* tr:nth-child(even){
-  background-color: rgb(241, 241, 241);
-} */
-
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 
@@ -129,21 +122,21 @@ body {
 }
 
 .winner-name {
-  color: black;
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 24px;
 }
 
 .score {
-  background-color: #585853;
+  background-color: #e7e7e7;
   width: 90px;
   text-align: center;
   border-radius: 50px;
-  color: white;
+  color: rgb(95, 94, 94);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-style: italic;
+
   margin: 0px auto;
 }
 
@@ -154,25 +147,17 @@ body {
 /* Start of Footer */
 
 #footer {
-  padding: 10px;
-
-  position: absolute;
-
-  left: 50%;
-  bottom: 0px;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 .developers {
   text-align: center;
 }
 
-.developers-main{
+.developers-main {
   text-decoration: none;
   color: black;
 }
 
-.developers-main:hover{
+.developers-main:hover {
   text-decoration: none;
   color: red;
 }
@@ -183,29 +168,8 @@ body {
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* media Queries */
 
-/* Admin button will only show on screens having device width greater than 1200px */
-@media (min-width: 1200px) {
-  .admin-button {
-    padding: 15px 50px;
-    background-image: linear-gradient(to right, #ee4d7b, #3173e3);
-    color: white;
-    display: block;
-    border-radius: 5px;
-    margin: 0px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 10px 40px -15px #ee4d7b;
-    outline: none;
-    font-weight: 600;
-  }
-
-  .admin-button:hover {
-    transform: scale(0.95);
-    color: white;
-  }
-}
 @media (max-width: 1131px) and (min-width: 992px) {
   .winner-name {
-    color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -273,21 +237,18 @@ body {
   }
 
   .winner-name {
-    color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 15px;
   }
 
   .score {
-    background-color: #585853;
     width: 60px;
     text-align: center;
     border-radius: 50px;
-    color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-style: italic;
+
     margin: 0px auto;
     font-size: 12px;
   }
@@ -320,7 +281,6 @@ body {
   }
 
   .winner-name {
-    color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 15px;
@@ -355,14 +315,13 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
     font-size: 35px;
-    color: black;
+
     letter-spacing: 2px;
   }
 }
 
 @media (max-width: 365px) {
   .winner-name {
-    color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 12px;
