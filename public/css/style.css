@@ -66,6 +66,19 @@ body {
   color: #6c767d;
 }
 
+.score-in-table {
+  background-color: #e7e7e7;
+  width: 70px;
+  text-align: center;
+  border-radius: 50px;
+  /* color: white; */
+  margin: 0px auto;
+}
+
+/* tr:nth-child(even){
+  background-color: rgb(241, 241, 241);
+} */
+
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 /* ===-===-===-===-===-===-===-===-===-===-===-===-===-=== */
 
