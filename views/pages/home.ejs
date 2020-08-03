@@ -69,106 +69,13 @@
                   </tr>
                 </thead>
                 <tbody id="myTable">
+                  <% rankingResult.forEach(( participant)=>{%>
                   <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
+                    <td><%= participant.ranking %></td>
+                    <td><%= participant.name %></td>
+                    <td><%= participant.total %></td>
                   </tr>
-                  <tr>
-                    <td>July</td>
-                    <td>Dooley</td>
-                    <td>july@greatstuff.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
-                  <tr>
-                    <td>Anja</td>
-                    <td>Ravendale</td>
-                    <td>a_r@test.com</td>
-                  </tr>
+                  <% }) %>
                 </tbody>
               </table>
             </div>

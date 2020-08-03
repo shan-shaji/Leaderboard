@@ -4,14 +4,11 @@ const homePageRoutes = require("./routes/homePageRoutes.js");
 
 const ejs = require("ejs");
 
-// initiate mongo server
-InitiateMongoServer();
-
 // Creating an instance
 const app = express();
 
 // Setting port
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 
 // Serving static files
 app.use(express.static("public"));
